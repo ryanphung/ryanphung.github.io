@@ -54,6 +54,8 @@ const editor = ace.edit("editor", {
   selectionStyle: "text",
   showPrintMargin: false,
   theme: "ace/theme/chrome",
+  tabSize: 2,
+  useSoftTabs: true,
 });
 
 const paths = ace.edit("paths", {
@@ -61,6 +63,8 @@ const paths = ace.edit("paths", {
   selectionStyle: "text",
   showPrintMargin: false,
   theme: "ace/theme/chrome",
+  tabSize: 2,
+  useSoftTabs: true,
 });
 
 const result = ace.edit("result", {
@@ -69,6 +73,8 @@ const result = ace.edit("result", {
   showPrintMargin: false,
   theme: "ace/theme/chrome",
   readOnly: true,
+  tabSize: 2,
+  useSoftTabs: true,
 });
 
 loadFromLocalStorage("editor", editor);
