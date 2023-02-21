@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-body">
+        <h1>JSON Tool</h1>
+        <p class="lead">Paste a JSON string into the text box and use the buttons to minify or pretty-print the text</p>
+        <div class="editor-wrapper form-group">
+          <div id="editor"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><a class="btn" id="minify">Minify</a></div>
+          <div class="col-md-6"><a class="btn" id="beautify">Beautify</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3>Lodash expression</h3>
+        <p class="lead">Type the expression here. Input is in the variable "data"</p>
+        <div id="editor-wrapper-paths" class="editor-wrapper form-group">
+          <div id="paths"></div>
+        </div>
+        <h3>Result</h3>
+        <div class="editor-wrapper form-group">
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/relaxed-json@1.0.3/relaxed-json.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js'></script>
+  <script src="./json.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
