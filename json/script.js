@@ -86,9 +86,9 @@ paths.on("change", () => {
 });
 
 // disable the auto selection of the result
-result.getSession().selection.on("changeSelection", function (e) {
-  result.getSession().selection.clearSelection();
-});
+// result.getSession().selection.on("changeSelection", function (e) {
+//   result.getSession().selection.clearSelection();
+// });
 
 document.getElementById("minify").addEventListener("click", () => formatText());
 document
